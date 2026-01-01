@@ -6,20 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #000000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
 }
 
-/* ===== GLOBAL TEXT ===== */
-h2, h3, p, li, a, span, strong {
-  color: #ffffff;
-}
-
-/* ===== HERO ===== */
 .hero {
   padding: 24px;
 }
@@ -27,69 +20,56 @@ h2, h3, p, li, a, span, strong {
 .title {
   font-size: 28px;
   font-weight: bold;
-  color: #ffffff;
 }
 
 .subtitle {
   margin-top: 6px;
-  color: #ffffff;
 }
 
-/* ===== BUTTONS ===== */
 .btns {
   margin-top: 14px;
 }
 
-.btn,
-.btn.secondary {
+.btn {
   display: inline-block;
   margin-right: 10px;
-  padding: 8px 12px;
-  border: 1px solid #ffffff;
-  background: transparent;
-  color: #ffffff;
+  padding: 6px 10px;
+  border: 1px solid #000000;
   text-decoration: none;
+  color: #000000;
   font-size: 14px;
 }
 
-.btn:hover,
-.btn.secondary:hover {
-  background: #ffffff;
-  color: #000000;
+.btn.secondary {
+  background: #f2f2f2;
 }
 
-/* ===== LAYOUT ===== */
 .row {
   display: flex;
   gap: 24px;
   margin-top: 28px;
+  padding: 0 24px;
 }
 
 section {
   flex: 1;
-  padding: 16px;
 }
 
-/* ===== LISTS ===== */
 .list-compact {
   padding-left: 18px;
 }
 
-/* ===== GRID ===== */
 .grid.two {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-/* ===== FOOTER ===== */
 .footer {
-  margin-top: 32px;
+  margin: 24px;
   font-size: 13px;
-  color: #ffffff;
 }
 
-/* ===== UTIL ===== */
 .hidden {
   display: none;
 }
@@ -99,10 +79,9 @@ section {
 }
 
 .muted {
-  color: #ffffff;
+  color: #444444;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .row {
     flex-direction: column;
@@ -132,6 +111,7 @@ section {
 <div class="row">
   <section>
     <h2>Experience</h2>
+
     <div>
       <h3>INTEC SA (collab. with Baker Hughes) — 2017–Present</h3>
       <p class="muted">Corinth Refinery (Motor Oil Hellas) — visbreaker & FCC</p>
@@ -140,6 +120,7 @@ section {
         <li>Introduced Lean routines (OEE dashboards, 5S, Kaizen suggestions).</li>
       </ul>
     </div>
+
     <div>
       <h3>TU/e — Postdoctoral Researcher — 2008–2009</h3>
       <ul class="list-compact">
@@ -187,12 +168,12 @@ section {
   </section>
 </div>
 
-<section>
+<section style="padding: 0 24px;">
   <h2>Selected Work</h2>
   <div class="grid two">
     <div>
       <h3>Lean Performance in PET Film Line</h3>
-      <p>Analysis of losses and OEE uplift through SMED/Kaizen.</p>
+      <p>Analysis of losses (downtime, scrap, changeover) and OEE uplift through SMED/Kaizen.</p>
     </div>
     <div>
       <h3>Refinery Visbreaker Run Monitoring</h3>
@@ -201,10 +182,10 @@ section {
   </div>
 </section>
 
-<section>
+<section style="padding: 0 24px;">
   <h2>Contact</h2>
   <p>Email: <a href="mailto:promitheus77@yahoo.com">promitheus77@yahoo.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/athanasios-dimopoulos</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com/in/athanasios-dimopoulos</a></p>
 </section>
 
 <p class="footer">© 2026 Athanasios Dimopoulos · Built for GitHub Pages</p>
