@@ -43,6 +43,7 @@
       <li>LCA (ISO 14040/14044)</li>
       <li>Green Skills Passport (Microsoft)</li>
       <li>Foundations of Sustainable Development</li>
+      <!-- ΜΟΝΗ ΑΛΛΑΓΗ -->
       <li>Sustainable Supply Chains and ESG Compliance</li>
       <li>Lean Manufacturing and Lean Management of Industrial Enterprises</li>
       <li>Data Science Professional Certificate</li>
