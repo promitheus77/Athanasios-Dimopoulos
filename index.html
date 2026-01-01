@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+/* ===== LIGHT THEME – SAME LAYOUT ===== */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -20,10 +21,12 @@ body {
 .title {
   font-size: 28px;
   font-weight: bold;
+  color: #000000;
 }
 
 .subtitle {
   margin-top: 6px;
+  color: #333333;
 }
 
 .btns {
@@ -68,6 +71,7 @@ section {
 .footer {
   margin: 24px;
   font-size: 13px;
+  color: #333333;
 }
 
 .hidden {
@@ -79,7 +83,7 @@ section {
 }
 
 .muted {
-  color: #444444;
+  color: #555555;
 }
 
 @media (max-width: 900px) {
@@ -98,8 +102,12 @@ section {
 <div class="hero">
   <div>
     <div class="title">Dr. Athanasios (Thanos) Dimopoulos</div>
-    <div class="subtitle" data-lang="en">Refinery operations (visbreaker, FCC) • Lean / Quality • LCA / ESG</div>
-    <div class="subtitle hidden" data-lang="el">Διυλιστηριακές λειτουργίες (visbreaker, FCC) • Lean / Ποιότητα • LCA / ESG</div>
+    <div class="subtitle" data-lang="en">
+      Refinery operations (visbreaker, FCC) • Lean / Quality • LCA / ESG
+    </div>
+    <div class="subtitle hidden" data-lang="el">
+      Διυλιστηριακές λειτουργίες (visbreaker, FCC) • Lean / Ποιότητα • LCA / ESG
+    </div>
     <div class="btns">
       <a class="btn" href="mailto:promitheus77@yahoo.com">Email</a>
       <a class="btn secondary" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
@@ -184,11 +192,21 @@ section {
 
 <section style="padding: 0 24px;">
   <h2>Contact</h2>
-  <p>Email: <a href="mailto:promitheus77@yahoo.com">promitheus77@yahoo.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com/in/athanasios-dimopoulos</a></p>
+  <p><strong>Email:</strong> <a href="mailto:promitheus77@yahoo.com">promitheus77@yahoo.com</a></p>
+  <p><strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+      linkedin.com/in/athanasios-dimopoulos
+    </a>
+  </p>
 </section>
 
-<p class="footer">© 2026 Athanasios Dimopoulos · Built for GitHub Pages</p>
+<p class="footer">
+  © <span id="y"></span> Athanasios Dimopoulos · Built for GitHub Pages
+</p>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
