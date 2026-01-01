@@ -1,111 +1,235 @@
-<div class="hero">
-  <div>
-    <div class="title">Dr. Athanasios (Thanos) Dimopoulos</div>
-    <div class="subtitle" data-lang="en">Refinery operations (visbreaker, FCC) • Lean / Quality • LCA / ESG</div>
-    <div class="subtitle hidden" data-lang="el">Διυλιστηριακές λειτουργίες (visbreaker, FCC) • Lean / Ποιότητα • LCA / ESG</div>
-    <div class="btns">
-      <a class="btn" href="mailto:promitheus77@yahoo.com">✉️ <span data-lang="en">Email</span><span data-lang="el" class="hidden">Email</span></a>
-      <a class="btn secondary" href="https://www.linkedin.com" target="_blank" rel="noopener">in <span class="nowrap">LinkedIn</span></a>
-      <a class="btn secondary" href="./Athanasios_Dimopoulos_CV.pdf" download>⬇️ <span data-lang="en">Download CV</span><span data-lang="el" class="hidden">Λήψη CV</span></a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Athanasios (Thanos) Dimopoulos</title>
+  <meta name="description" content="Refinery operations (visbreaker, FCC) • Lean / Quality • LCA / ESG" />
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#0f1621;
+      --text:#e8eef6;
+      --muted:#a8b3c2;
+      --line:rgba(255,255,255,.10);
+      --accent:#6ee7ff;
+      --shadow:0 12px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1000px 600px at 15% 10%, rgba(110,231,255,.12), transparent 60%),
+        radial-gradient(900px 500px at 85% 20%, rgba(99,102,241,.10), transparent 55%),
+        var(--bg);
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:32px auto; padding:0 16px;}
+    .topbar{display:flex; justify-content:flex-end; gap:10px; margin-bottom:14px;}
+    .langbtn{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      color:var(--text);
+      padding:8px 10px;
+      border-radius:12px;
+      cursor:pointer;
+      font-size:13px;
+    }
+    .langbtn:hover{border-color:rgba(255,255,255,.22)}
+    .hero{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px 22px;
+    }
+    .title{font-size:28px; font-weight:750; letter-spacing:.2px;}
+    .subtitle{margin-top:6px; color:var(--muted); font-size:15px;}
+    .btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;}
+    .btn{
+      text-decoration:none;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.03);
+      padding:10px 12px;
+      border-radius:14px;
+      font-weight:650;
+      font-size:14px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .btn:hover{border-color:rgba(110,231,255,.35)}
+    .btn.secondary{
+      background:rgba(255,255,255,.01);
+    }
+    .nowrap{white-space:nowrap}
+    .row{
+      display:grid;
+      grid-template-columns: 2fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 860px){
+      .row{grid-template-columns:1fr}
+    }
+    section{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      border-radius:var(--radius);
+      padding:18px 18px;
+      box-shadow:0 10px 24px rgba(0,0,0,.25);
+    }
+    h2{margin:0 0 10px 0; font-size:18px;}
+    h3{margin:12px 0 6px 0; font-size:15px;}
+    .muted{color:var(--muted); margin:0 0 10px 0; font-size:13px;}
+    .list-compact{margin:8px 0 0 18px; padding:0;}
+    .list-compact li{margin:6px 0; color:var(--text);}
+    .grid.two{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+    @media (max-width: 860px){.grid.two{grid-template-columns:1fr}}
+    .footer{
+      color:var(--muted);
+      text-align:center;
+      margin:18px 0 8px;
+      font-size:13px;
+    }
+    .hidden{display:none !important;}
+    .divider{height:1px; background:var(--line); margin:12px 0;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <button class="langbtn" id="toggleLang">EN / EL</button>
     </div>
-  </div>
-</div>
 
-<div class="row" style="margin-top:28px;">
-  <section>
-    <h2 data-lang="en">Experience</h2>
-    <h2 class="hidden" data-lang="el">Εμπειρία</h2>
-    <div>
-      <h3>INTEC SA (collab. with Baker Hughes) — <span class="nowrap">2017–Present</span></h3>
-      <p class="muted">Corinth Refinery (Motor Oil Hellas) — visbreaker & FCC</p>
-      <ul class="list-compact">
-        <li data-lang="en">Monitoring visbreaker runs, troubleshooting, quality & process optimization.</li>
-        <li class="hidden" data-lang="el">Παρακολούθηση runs visbreaker, επίλυση προβλημάτων, ποιότητα & βελτιστοποίηση διεργασιών.</li>
-        <li data-lang="en">Introduced Lean routines (OEE dashboards, 5S, Kaizen suggestions).</li>
-        <li class="hidden" data-lang="el">Εισαγωγή Lean ρουτινών (OEE dashboards, 5S, ιδέες Kaizen).</li>
-      </ul>
-    </div>
-    <div>
-      <h3>TU/e — Postdoctoral Researcher — 2008–2009</h3>
-      <ul class="list-compact">
-        <li data-lang="en">Polymer coatings research and lab-scale experimentation.</li>
-        <li class="hidden" data-lang="el">Έρευνα πολυμερικών επιστρώσεων και εργαστηριακά πειράματα.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2 data-lang="en">Certifications</h2>
-    <h2 class="hidden" data-lang="el">Πιστοποιήσεις</h2>
-    <ul class="list-compact">
-      <li>CAPM — PMI</li>
-      <li>Lean Six Sigma — Yellow Belt</li>
-      <li>LCA (ISO 14040/14044)</li>
-      <li>Green Skills Passport (Microsoft)</li>
-      <li>Foundations of Sustainable Development</li>
-      <li>Sustainable Supply Chains and ESG Compliance</li>
-      <li>Lean Manufacturing and Lean Management of Industrial Enterprises</li>
-      <li>Data Science Professional Certificate</li>
-    </ul>
-  </section>
-</div>
-
-<div class="row" style="margin-top:16px;">
-  <section>
-    <h2 data-lang="en">Education</h2>
-    <h2 class="hidden" data-lang="el">Σπουδές</h2>
-    <ul class="list-compact">
-      <li data-lang="en"><strong>PhD, Materials Science</strong> — Cranfield University, UK</li>
-      <li class="hidden" data-lang="el"><strong>Διδακτορικό, Επιστήμη Υλικών</strong> — Cranfield University, UK</li>
-      <li data-lang="en"><strong>Diploma, Chemical Engineering</strong> — NTUA, Greece</li>
-      <li class="hidden" data-lang="el"><strong>Δίπλωμα, Χημικός Μηχανικός</strong> — ΕΜΠ</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 data-lang="en">Focus & Skills</h2>
-    <h2 class="hidden" data-lang="el">Εστίαση & Δεξιότητες</h2>
-    <div class="grid two">
+    <div class="hero">
       <div>
-        <h3 data-lang="en">Lean & Quality</h3>
-        <h3 class="hidden" data-lang="el">Lean & Ποιότητα</h3>
-        <p data-lang="en">OEE, VSM, 5S, Kaizen, RCA, SMED.</p>
-        <p class="hidden" data-lang="el">OEE, VSM, 5S, Kaizen, RCA, SMED.</p>
-      </div>
-      <div>
-        <h3 data-lang="en">Sustainability</h3>
-        <h3 class="hidden" data-lang="el">Βιωσιμότητα</h3>
-        <p data-lang="en">LCA (ISO 14040/44), circular economy basics, ESG reporting fundamentals.</p>
-        <p class="hidden" data-lang="el">LCA (ISO 14040/44), βασικές αρχές κυκλικής οικονομίας, θεμελιώδη ESG.</p>
+        <div class="title">Dr. Athanasios (Thanos) Dimopoulos</div>
+        <div class="subtitle" data-lang="en">Refinery operations (visbreaker, FCC) • Lean / Quality • LCA / ESG</div>
+        <div class="subtitle hidden" data-lang="el">Διυλιστηριακές λειτουργίες (visbreaker, FCC) • Lean / Ποιότητα • LCA / ESG</div>
+        <div class="btns">
+          <a class="btn" href="mailto:promitheus77@yahoo.com">✉️ <span data-lang="en">Email</span><span data-lang="el" class="hidden">Email</span></a>
+          <a class="btn secondary" href="https://www.linkedin.com" target="_blank" rel="noopener">in <span class="nowrap">LinkedIn</span></a>
+          <a class="btn secondary" href="./Athanasios_Dimopoulos_CV.pdf" download>⬇️ <span data-lang="en">Download CV</span><span data-lang="el" class="hidden">Λήψη CV</span></a>
+        </div>
       </div>
     </div>
-  </section>
-</div>
 
-<section style="margin-top:16px;">
-  <h2 data-lang="en">Selected Work</h2>
-  <h2 class="hidden" data-lang="el">Ενδεικτικές Εργασίες</h2>
-  <div class="grid two">
-    <div>
-      <h3 data-lang="en">Lean Performance in PET Film Line</h3>
-      <h3 class="hidden" data-lang="el">Lean Απόδοση στη Γραμμή PET Film</h3>
-      <p data-lang="en">Analysis of losses (downtime, scrap, changeover) and OEE uplift through SMED/Kaizen.</p>
-      <p class="hidden" data-lang="el">Ανάλυση απωλειών (downtime, scrap, changeover) και βελτίωση OEE με SMED/Kaizen.</p>
+    <div class="row" style="margin-top:28px;">
+      <section>
+        <h2 data-lang="en">Experience</h2>
+        <h2 class="hidden" data-lang="el">Εμπειρία</h2>
+
+        <div>
+          <h3>INTEC SA (collab. with Baker Hughes) — <span class="nowrap">2017–Present</span></h3>
+          <p class="muted">Corinth Refinery (Motor Oil Hellas) — visbreaker &amp; FCC</p>
+          <ul class="list-compact">
+            <li data-lang="en">Monitoring visbreaker runs, troubleshooting, quality &amp; process optimization.</li>
+            <li class="hidden" data-lang="el">Παρακολούθηση runs visbreaker, επίλυση προβλημάτων, ποιότητα &amp; βελτιστοποίηση διεργασιών.</li>
+            <li data-lang="en">Introduced Lean routines (OEE dashboards, 5S, Kaizen suggestions).</li>
+            <li class="hidden" data-lang="el">Εισαγωγή Lean ρουτινών (OEE dashboards, 5S, ιδέες Kaizen).</li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+          <h3>TU/e — Postdoctoral Researcher — 2008–2009</h3>
+          <ul class="list-compact">
+            <li data-lang="en">Polymer coatings research and lab-scale experimentation.</li>
+            <li class="hidden" data-lang="el">Έρευνα πολυμερικών επιστρώσεων και εργαστηριακά πειράματα.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 data-lang="en">Certifications</h2>
+        <h2 class="hidden" data-lang="el">Πιστοποιήσεις</h2>
+        <ul class="list-compact">
+          <li>CAPM — PMI</li>
+          <li>Lean Six Sigma — Yellow Belt</li>
+          <li>LCA (ISO 14040/14044)</li>
+          <li>Green Skills Passport (Microsoft)</li>
+          <li>Foundations of Sustainable Development</li>
+          <li>Sustainable Supply Chains and ESG Compliance</li>
+          <li>Lean Manufacturing and Lean Management of Industrial Enterprises</li>
+          <li>Data Science Professional Certificate</li>
+        </ul>
+      </section>
     </div>
-    <div>
-      <h3 data-lang="en">Refinery Visbreaker Run Monitoring</h3>
-      <h3 class="hidden" data-lang="el">Παρακολούθηση Run Visbreaker</h3>
-      <p data-lang="en">Run data tracking, troubleshooting, and quality impact assessment.</p>
-      <p class="hidden" data-lang="el">Παρακολούθηση δεδομένων, επίλυση προβλημάτων και αξιολόγηση ποιότητας.</p>
+
+    <div class="row" style="margin-top:16px;">
+      <section>
+        <h2 data-lang="en">Education</h2>
+        <h2 class="hidden" data-lang="el">Σπουδές</h2>
+        <ul class="list-compact">
+          <li data-lang="en"><strong>PhD, Materials Science</strong> — Cranfield University, UK</li>
+          <li class="hidden" data-lang="el"><strong>Διδακτορικό, Επιστήμη Υλικών</strong> — Cranfield University, UK</li>
+          <li data-lang="en"><strong>Diploma, Chemical Engineering</strong> — NTUA, Greece</li>
+          <li class="hidden" data-lang="el"><strong>Δίπλωμα, Χημικός Μηχανικός</strong> — ΕΜΠ</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 data-lang="en">Focus &amp; Skills</h2>
+        <h2 class="hidden" data-lang="el">Εστίαση &amp; Δεξιότητες</h2>
+        <div class="grid two">
+          <div>
+            <h3 data-lang="en">Lean &amp; Quality</h3>
+            <h3 class="hidden" data-lang="el">Lean &amp; Ποιότητα</h3>
+            <p class="muted" data-lang="en">OEE, VSM, 5S, Kaizen, RCA, SMED.</p>
+            <p class="muted hidden" data-lang="el">OEE, VSM, 5S, Kaizen, RCA, SMED.</p>
+          </div>
+          <div>
+            <h3 data-lang="en">Sustainability</h3>
+            <h3 class="hidden" data-lang="el">Βιωσιμότητα</h3>
+            <p class="muted" data-lang="en">LCA (ISO 14040/44), circular economy basics, ESG reporting fundamentals.</p>
+            <p class="muted hidden" data-lang="el">LCA (ISO 14040/44), βασικές αρχές κυκλικής οικονομίας, θεμελιώδη ESG.</p>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <section style="margin-top:16px;">
+      <h2 data-lang="en">Contact</h2>
+      <h2 class="hidden" data-lang="el">Επικοινωνία</h2>
+      <p><strong>Email:</strong> <a href="mailto:promitheus77@yahoo.com">promitheus77@yahoo.com</a></p>
+      <p><strong>LinkedIn:</strong> <a target="_blank" rel="noopener" href="https://www.linkedin.com">linkedin.com/in/athanasios-dimopoulos</a></p>
+    </section>
+
+    <p class="footer">© <span id="y"></span> Athanasios Dimopoulos · <span data-lang="en">Built for GitHub Pages</span><span class="hidden" data-lang="el">Υλοποίηση για GitHub Pages</span></p>
   </div>
-</section>
 
-<section style="margin-top:16px;">
-  <h2 data-lang="en">Contact</h2>
-  <h2 class="hidden" data-lang="el">Επικοινωνία</h2>
-  <p><strong>Email:</strong> <a href="mailto:promitheus77@yahoo.com">promitheus77@yahoo.com</a></p>
-  <p><strong>LinkedIn:</strong> <a target="_blank" rel="noopener" href="https://www.linkedin.com">linkedin.com/in/athanasios-dimopoulos</a></p>
-</section>
+  <script>
+    (function(){
+      const key = "site_lang";
+      const btn = document.getElementById("toggleLang");
 
-<p class="footer">© <span id="y"></span> Athanasios Dimopoulos · <span data-lang="en">Built for GitHub Pages</span><span class="hidden" data-lang="el">Υλοποίηση για GitHub Pages</span></p>
+      function setLang(lang){
+        const en = document.querySelectorAll('[data-lang="en"]');
+        const el = document.querySelectorAll('[data-lang="el"]');
+        en.forEach(n => n.classList.toggle("hidden", lang !== "en"));
+        el.forEach(n => n.classList.toggle("hidden", lang !== "el"));
+        localStorage.setItem(key, lang);
+      }
+
+      const saved = localStorage.getItem(key);
+      setLang(saved === "el" ? "el" : "en");
+
+      btn.addEventListener("click", () => {
+        const current = localStorage.getItem(key) || "en";
+        setLang(current === "en" ? "el" : "en");
+      });
+
+      document.getElementById("y").textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
